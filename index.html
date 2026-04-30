@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Travells | Modern Adventurous Tours in Kyrgyzstan</title>
+    <meta name="description" content="Discover majestic Kyrgyzstan mountains, nomadic culture, and alpine lakes with Fun Travells. Premium adventure tours tailored for you.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">
+                <img src="assets/images/logo.jpg" alt="Fun Travells Logo" class="brand-logo">
+            </a>
+            
+            <button class="mobile-toggle" aria-label="Toggle navigation" aria-controls="nav-menu" aria-expanded="false">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link active" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#tours" class="nav-link" data-i18n="nav_tours">Tours</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
+                    <li><a href="#gallery" class="nav-link" data-i18n="nav_gallery">Gallery</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="lang-toggle" id="lang-toggle">Eng / Рус</button>
+                    <a href="#" class="btn btn-primary cta-btn open-modal-btn" data-i18n="book_now">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+        <div class="parallax-bg" style="background-image: url('assets/images/hero_bg.webp');"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="fade-in-up" data-i18n="hero_title">Fun Travells</h1>
+            <p class="tagline fade-in-up delay-1" data-i18n="hero_tagline">Traveling is fun!</p>
+            <div class="hero-actions fade-in-up delay-2">
+                <a href="#tours" class="btn btn-primary btn-large" data-i18n="hero_btn_explore">Explore Tours</a>
+                <a href="#about" class="btn btn-outline btn-large" data-i18n="hero_btn_discover">Discover Kyrgyzstan</a>
+            </div>
+        </div>
+        <a href="#tours" class="scroll-indicator" aria-label="Scroll down">
+            <i data-lucide="arrow-down"></i>
+        </a>
+    </header>
+
+    <!-- Featured Tours Section -->
+    <section id="tours" class="section tours-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="tours_title">Featured Tours</h2>
+                <p data-i18n="tours_subtitle">Curated alpine experiences tailored for adventurous souls.</p>
+            </div>
+            
+            <div class="tours-grid">
+                <!-- Tour 1 -->
+                <article class="tour-card scroll-animate">
+                    <div class="card-image">
+                        <img src="assets/images/tour_1.jpg" alt="Winter Ski Resort Tour" loading="lazy">
+                        <div class="card-price">$450</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="tour1_title">Winter Alpine Retreat</h3>
+                        <p data-i18n="tour1_desc">Experience world-class skiing atop majestic, snow-covered peaks.</p>
+                        <div class="card-footer">
+                            <span class="duration"><i data-lucide="calendar"></i><span data-i18n="tour1_duration"> 5 Days</span></span>
+                            <button class="btn btn-text open-modal-btn"><span data-i18n="book_tour_text">Book Tour</span> <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Tour 2 -->
+                <article class="tour-card scroll-animate" style="transition-delay: 0.1s;">
+                    <div class="card-image">
+                        <img src="assets/images/tour_2.webp" alt="Nomadic Yurt Camp" loading="lazy">
+                        <div class="card-price">$650</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="tour2_title">Nomadic Yurt Heritage</h3>
+                        <p data-i18n="tour2_desc">Immerse yourself in traditional nomadic culture deep within lush valleys.</p>
+                        <div class="card-footer">
+                            <span class="duration"><i data-lucide="calendar"></i><span data-i18n="tour2_duration"> 7 Days</span></span>
+                            <button class="btn btn-text open-modal-btn"><span data-i18n="book_tour_text">Book Tour</span> <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Tour 3 -->
+                <article class="tour-card scroll-animate" style="transition-delay: 0.2s;">
+                    <div class="card-image">
+                        <img src="assets/images/tour_3.jpg" alt="Horseback Riding at Lake Song Kul" loading="lazy">
+                        <div class="card-price">$320</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="tour3_title">Song Kul Horse Trek</h3>
+                        <p data-i18n="tour3_desc">Ride through untouched pastures to one of Kyrgyzstan's largest alpine lakes.</p>
+                        <div class="card-footer">
+                            <span class="duration"><i data-lucide="calendar"></i><span data-i18n="tour3_duration"> 4 Days</span></span>
+                            <button class="btn btn-text open-modal-btn"><span data-i18n="book_tour_text">Book Tour</span> <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Tour 4 -->
+                <article class="tour-card scroll-animate" style="transition-delay: 0.3s;">
+                    <div class="card-image">
+                        <img src="assets/images/tour_4.webp" alt="Mountain Canyon Hiking Trails" loading="lazy">
+                        <div class="card-price">$500</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="tour4_title">Grand Canyons Hike</h3>
+                        <p data-i18n="tour4_desc">Discover breath-taking viewpoints and towering, oxidized rock formations.</p>
+                        <div class="card-footer">
+                            <span class="duration"><i data-lucide="calendar"></i><span data-i18n="tour4_duration"> 6 Days</span></span>
+                            <button class="btn btn-text open-modal-btn"><span data-i18n="book_tour_text">Book Tour</span> <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Modal -->
+    <div id="booking-modal" class="modal-overlay">
+        <div class="glass-panel modal-content">
+            <button class="close-modal-btn" aria-label="Close modal"><i data-lucide="x"></i></button>
+            <div class="booking-content">
+                <h2 data-i18n="start_adventure">Start Your Adventure</h2>
+                <p data-i18n="leave_details">Leave your details, and our guides will craft your perfect itinerary.</p>
+            </div>
+            <form class="booking-form" novalidate onsubmit="event.preventDefault(); alert('Booking form submitted successfully! We will contact you soon.');">
+                <div class="form-group">
+                    <label for="name" data-i18n="full_name">Full Name</label>
+                    <input type="text" id="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" data-i18n="email_addr">Email Address</label>
+                    <input type="email" id="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone" data-i18n="phone_number">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="+996 555 123 456" required>
+                </div>
+                <div class="form-group">
+                    <label for="comment" data-i18n="special_requests">Special Requests</label>
+                    <textarea id="comment" rows="4" placeholder="Tell us what you're looking for..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit full-width" data-i18n="submit_request">Submit Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images scroll-animate">
+                    <img src="assets/images/tour_2.webp" alt="Culture" class="img-1" loading="lazy">
+                    <img src="assets/images/tour_1.jpg" alt="Adventure" class="img-2" loading="lazy">
+                    <img src="assets/images/gallery_1.jpg" alt="Landscape" class="img-3" loading="lazy">
+                    <img src="assets/images/tour_3.jpg" alt="Nature" class="img-4" loading="lazy">
+                </div>
+                <div class="about-content scroll-animate">
+                    <span class="subtitle" data-i18n="about_subtitle">About Us</span>
+                    <h2 data-i18n="about_title">Discover the Heart of Central Asia</h2>
+                    <p data-i18n="about_p1">We are a passionate team of local experts dedicated to sharing the hidden wonders of Kyrgyzstan. Since our founding, we've embraced authenticity, ensuring every journey respectfully showcases our natural landscapes and deep nomadic heritage.</p>
+                    <p data-i18n="about_p2">Whether you're craving a high-altitude hike or tranquil moments by a pristine alpine lake, Fun Travells guarantees an unforgettable footprint-free adventure.</p>
+                    <a href="#tours" class="btn btn-secondary" data-i18n="about_btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i data-lucide="award" class="stat-icon"></i>
+                    <h3 class="stat-number" data-target="15">0</h3>
+                    <p data-i18n="stat_1">Years Experience</p>
+                </div>
+                <div class="stat-card">
+                    <i data-lucide="users" class="stat-icon"></i>
+                    <h3 class="stat-number" data-target="12000">0</h3>
+                    <p data-i18n="stat_2">Happy Travelers</p>
+                </div>
+                <div class="stat-card">
+                    <i data-lucide="map-pin" class="stat-icon"></i>
+                    <h3 class="stat-number" data-target="45">0</h3>
+                    <p data-i18n="stat_3">Tour Routes</p>
+                </div>
+                <div class="stat-card">
+                    <i data-lucide="compass" class="stat-icon"></i>
+                    <h3 class="stat-number" data-target="30">0</h3>
+                    <p data-i18n="stat_4">Professional Guides</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="gallery_title">Moments Captured</h2>
+                <p data-i18n="gallery_subtitle">Inspiring scenes from our recent expeditions.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item scroll-animate">
+                    <img src="assets/images/gallery_1.jpg" alt="Mountain Pass" loading="lazy">
+                    <div class="gallery-overlay"><i data-lucide="maximize-2"></i></div>
+                </div>
+                <div class="gallery-item scroll-animate">
+                    <img src="assets/images/gallery_2.jpg" alt="Eagle Hunting" loading="lazy">
+                    <div class="gallery-overlay"><i data-lucide="maximize-2"></i></div>
+                </div>
+                <div class="gallery-item scroll-animate">
+                    <img src="assets/images/gallery_3.png" alt="Sunset View" loading="lazy">
+                    <div class="gallery-overlay"><i data-lucide="maximize-2"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-brand white-text">
+                        <img src="assets/images/logo.jpg" alt="Fun Travells Logo" class="brand-logo footer-logo">
+                    </a>
+                    <p data-i18n="footer_desc">Traveling is fun! Discover the beauty of Kyrgyzstan with passionate local experts.</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 data-i18n="footer_links">Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero" data-i18n="nav_home">Home</a></li>
+                        <li><a href="#tours" data-i18n="nav_tours">Tours</a></li>
+                        <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+                        <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 data-i18n="footer_support">Support</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="footer_faq">FAQ</a></li>
+                        <li><a href="#" data-i18n="footer_tos">Terms of Service</a></li>
+                        <li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li>
+                        <li><a href="#" data-i18n="footer_responsible">Responsible Travel</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 data-i18n="footer_contact">Contact Us</h4>
+                    <ul>
+                        <li><i data-lucide="map-pin"></i> 123 Chuy Avenue, Bishkek, Kyrgyzstan</li>
+                        <li><i data-lucide="phone"></i> +996 555 123 456</li>
+                        <li><i data-lucide="mail"></i> info@funtravells.kg</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-i18n="footer_rights">&copy; 2026 Fun Travells. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
