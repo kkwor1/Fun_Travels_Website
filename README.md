@@ -39,9 +39,6 @@ To view the website locally, no build tools or package managers are required.
 3. **Open `index.html`:**
    Simply open the `index.html` file in your preferred web browser. Alternatively, you can use a local server extension like Live Server in VS Code for a better development experience.
 
-## 📸 Screenshots
-
-*(You can add screenshots of your website here later to showcase the design in the repository).*
 
 ## 📄 License
 
